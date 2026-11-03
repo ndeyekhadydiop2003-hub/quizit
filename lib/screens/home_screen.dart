@@ -12,8 +12,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFEEF2FF),
       body: SafeArea(
-        child: LayoutBuilder(
-          builder: (context, screenConstraints) {
+        child: SelectionArea(
+          child: LayoutBuilder(
+           builder: (context, screenConstraints) {
             final screenWidth = screenConstraints.maxWidth;
 
             // Marges adaptées à la taille de l'écran
@@ -109,7 +110,8 @@ class HomeScreen extends StatelessWidget {
           },
         ),
       ),
-    );
+    ));
+
   }
 }
 

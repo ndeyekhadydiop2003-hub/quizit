@@ -156,8 +156,9 @@ class _QuizScreenState extends State<QuizScreen> {
     return Scaffold(
       backgroundColor: const Color(0xFFEEF2FF),
       body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
+        child: SelectionArea(
+          child: Center(
+           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 780),
             child: Padding(
               padding: const EdgeInsets.all(24),
@@ -348,6 +349,6 @@ class _QuizScreenState extends State<QuizScreen> {
           ),
         ),
       ),
-    );
+    ));
   }
 }
