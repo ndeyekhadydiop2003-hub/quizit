@@ -19,8 +19,9 @@ class ResultScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFFEEF2FF),
       body: SafeArea(
-        child: Center(
-          child: ConstrainedBox(
+        child: SelectionArea(
+          child: Center(
+           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 780),
             child: SingleChildScrollView(
               padding: const EdgeInsets.all(28),
@@ -105,6 +106,6 @@ class ResultScreen extends StatelessWidget {
           ),
         ),
       ),
-    );
+    ));
   }
 }
